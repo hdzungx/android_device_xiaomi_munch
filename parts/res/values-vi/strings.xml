@@ -39,6 +39,16 @@
     <string name="thermal_gaming">Chơi game</string>
     <string name="thermal_streaming">Xem phim trực tuyến</string>
 
+    <!-- Touch Control Settings -->
+    <string name="touch_control_title">Điều khiển cảm ứng</string>
+    <string name="touch_game_mode_title">Bật</string>
+    <string name="touch_response_title">Độ nhạy</string>
+    <string name="touch_response_summary">Điều khiển độ nhạy cảm ứng</string>
+    <string name="touch_sensitivity_title">Độ nhạy cảm ứng</string>
+    <string name="touch_sensitivity_summary">Điều khiển độ nhạy cảm ứng cho các lần chạm lặp lại</string>
+    <string name="touch_resistant_title">Khu vực chống chạm</string>
+    <string name="touch_resistant_summary">Giảm độ nhạy cảm ứng gần các cạnh để tránh kích hoạt điều khiển cảm ứng</string>
+
     <!-- Refresh Rate Settings -->
     <string name="refresh_rate_tile_title">Tốc độ làm mới</string>
 
