@@ -68,4 +68,9 @@
     <string name="touch_sensitivity_summary">Điều khiển độ nhạy cảm ứng cho các lần chạm lặp lại</string>
     <string name="touch_resistant_title">Khu vực chống chạm</string>
     <string name="touch_resistant_summary">Giảm độ nhạy cảm ứng gần các cạnh để tránh kích hoạt điều khiển cảm ứng</string>
+
+    <!-- High Touch Polling -->
+    <string name="htsr_title">Độ nhạy cảm ứng</string>
+    <string name="htsr_enable_title">Tăng Độ nhạy cảm ứng</string>
+    <string name="htsr_enable_summary">Tăng tần số tín hiệu cảm ứng để giảm độ trễ</string>
 </resources>
