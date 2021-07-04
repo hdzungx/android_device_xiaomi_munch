@@ -66,4 +66,9 @@
     <string name="auto_hbm_mode_warning">Auto brightness needs to be turned on for auto HBM to work</string>
     <string name="hbm_disable_time_title"></string>
     <string name="hbm_disable_time_summary">disable delay (seconds)</string>
+
+    <!-- High Touch Polling -->
+    <string name="htsr_title">Touch Responsiveness</string>
+    <string name="htsr_enable_title">Increase Touch Responsiveness</string>
+    <string name="htsr_enable_summary">Increases touch polling rate to decrease latency</string>    
 </resources>
