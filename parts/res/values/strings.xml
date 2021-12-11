@@ -53,4 +53,22 @@
     <string name="htsr_title">Touch Responsiveness</string>
     <string name="htsr_enable_title">Increase Touch Responsiveness</string>
     <string name="htsr_enable_summary">Increases touch polling rate to decrease latency</string>    
+
+    <!-- DC dimming settings -->
+    <string name="dc_dimming_enable_title">DC Dimming</string>
+    <string name="dc_dimming_enable_summary">Reduces eye strain in low light conditions</string>
+    <string name="dc_dimming_enable_summary_not_supported">DC Dimming is currently not supported by the kernel</string>
+
+    <!-- HBM settings -->
+    <string name="hbm_fragment_title">High brightness mode</string>
+    <string name="hbm_fragment_summary">Customize HBM preferences</string>
+    <string name="hbm_mode_title">HBM</string>
+    <string name="hbm_mode_summary">Enable peak luminance</string>
+    <string name="auto_hbm_title">Automatic HBM</string>
+    <string name="auto_hbm_summary">Enable peak luminance based on sunlight</string>
+    <string name="auto_hbm_threshold_title"></string>
+    <string name="auto_hbm_threshold_summary">Threshold (lux)</string>
+    <string name="auto_hbm_mode_warning">Auto brightness needs to be turned on for auto HBM to work</string>
+    <string name="hbm_disable_time_title"></string>
+    <string name="hbm_disable_time_summary">disable delay (seconds)</string>
 </resources>
