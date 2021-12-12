@@ -17,3 +17,6 @@ allow vendor_mdm_helper vendor_mhi_device:chr_file rw_file_perms;
 
 # Allow mdm_helper to use wakelocks
 wakelock_use(vendor_mdm_helper)
+
+# Allow mdm_helper to execute /vendor/bin/ks
+allow vendor_mdm_helper ks_exec:file execute_no_trans;
