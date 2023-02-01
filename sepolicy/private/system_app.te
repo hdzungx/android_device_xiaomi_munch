@@ -1,2 +1,5 @@
 # Allow IFAAService access to Mlipay HAL
 hal_client_domain(system_app, hal_mlipay)
+
+# Kprofiles
+allow system_app sysfs_kprofiles:file rw_file_perms;
