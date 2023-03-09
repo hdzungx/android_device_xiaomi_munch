@@ -330,6 +330,13 @@ persist.vendor.sensors.sync_request=true
 # Shutdown
 sys.vendor.shutdown.waittime=500
 
+# Spatial Audio
+audio.spatializer.effect.util_clamp_min=300
+persist.vendor.audio.spatializer.speaker_enabled=true
+ro.audio.spatializer_enabled=true
+ro.audio.spatializer_transaural_enabled_default=false
+ro.vendor.audio.feature.spatial=7
+
 # Thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
