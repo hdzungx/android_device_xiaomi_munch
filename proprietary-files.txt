@@ -83,6 +83,7 @@ vendor/firmware/tfa98xx.cnt
 
 # Audio FX modules
 vendor/lib/soundfx/libasphere.so
+vendor/lib/soundfx/libmisoundfx.so
 vendor/lib/soundfx/libshoebox.so
 
 # Bluetooth
