@@ -119,7 +119,6 @@ vendor/bin/loadalgo
 vendor/firmware/mono.cnt
 vendor/firmware/tfa98xx.cnt
 
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
@@ -684,6 +683,46 @@ vendor/lib64/vendor.qti.esepowermanager@1.1.so
 # Feature enabler client
 vendor/bin/feature_enabler_client
 vendor/etc/init/feature_enabler_client.rc
+
+# Dolby App (OnePlus)
+system_ext/etc/sysconfig/config-com.dolby.daxappui.xml|43c610f41061f49959ce07b26c60427b8767e535
+system_ext/etc/sysconfig/config-com.dolby.daxservice.xml|7690774632fe32269657fc1a2a0c941c7cd83f3d
+system_ext/etc/sysconfig/hiddenapi-com.dolby.daxservice.xml|f647356bd3a4bb4174e873e4544c2921d51fd4d2                                                      
+system_ext/priv-app/DaxUI/DaxUI.apk|f2123124ddef928c7c490e2a83b0af5466a0df7e
+system_ext/priv-app/daxService/daxService.apk|0d1f71d0a58d909c05adacf5239503588b9d39ea
+
+# Dolby Miui
+system/lib/vendor.dolby.hardware.dms@2.0.so
+system/lib64/vendor.dolby.hardware.dms@2.0.so
+vendor/bin/hw/vendor.dolby.hardware.dms@2.0-service
+vendor/etc/init/vendor.dolby.hardware.dms@2.0-service.rc
+vendor/etc/vintf/manifest/manifest_vendor.dolby.hardware.dms.xml
+vendor/lib/libdapparamstorage.so
+vendor/lib/libdeccfg.so
+vendor/lib/vendor.dolby.hardware.dms@2.0.so
+vendor/lib64/libdapparamstorage.so
+vendor/lib64/libdeccfg.so
+vendor/lib64/libdlbdsservice.so|296f6967acff5f171ccb5ea16e4aae03f40b1fec
+vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
+vendor/lib64/vendor.dolby.hardware.dms@2.0.so
+
+# Dolby SoundFX
+vendor/lib/soundfx/libhwdap.so
+vendor/lib/soundfx/libswdap.so
+vendor/lib/soundfx/libswgamedap.so
+vendor/lib/soundfx/libswvqe.so
+vendor/lib64/soundfx/libhwdap.so
+vendor/lib64/soundfx/libswdap.so
+vendor/lib64/soundfx/libswgamedap.so
+vendor/lib64/soundfx/libswvqe.so
+
+# Dolby MediaCodecs
+vendor/lib/libstagefright_soft_ac4dec.so|2978a38b25a6c2d807222bf247074070af47ca3c
+vendor/lib/libstagefright_soft_ddpdec.so|8289b0df453ab0f99f754b1303123fce95d0e469
+vendor/lib/libstagefrightdolby.so|112aaae083412bebb5b6398155f0c0c358d45617
+vendor/lib64/libstagefright_soft_ac4dec.so|50626e80623681db2bddac71d09f1c288831b49f
+vendor/lib64/libstagefright_soft_ddpdec.so|0f50a04b8ec75adc152aab178df1c5f7abf15cdd
+vendor/lib64/libstagefrightdolby.so|bab2ecfa384b5a59250cb887166a3185ea918f65
 
 # Fingerprint
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so

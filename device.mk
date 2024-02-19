@@ -222,6 +222,44 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.display.mapper@3.0.vendor \
     vendor.qti.hardware.display.mapper@4.0.vendor
 
+# Dolby Config File
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/dolby/dax-config/dax-default.xml:$(TARGET_COPY_OUT_VENDOR)/etc/dolby/dax-default.xml
+
+# Dolby VNDK
+PRODUCT_COPY_FILES += \
+    prebuilts/vndk/v33/arm/arch-arm-armv7-a-neon/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
+    prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so
+
+# Dolby Sepolicy
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/dolby/private
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/dolby/vendor
+
+# Dolby Props
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.vendor.dolby.dax.version=DAX3_3.6.1.6_r1 \
+    ro.vendor.audio.dolby.dax.version=DAX3_3.6 \
+    ro.vendor.audio.dolby.dax.support=true \
+    ro.vendor.audio.dolby.surround.enable=true
+
+# Dolby Effects Props
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.audio.delta.refresh=true
+
+# Dolby Permissions
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/dolby/permissions,$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions)
+
+# MiSound with Dolby Environment (By Default - Disabled)
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.vendor.audio.misound.disable=true \
+    ro.vendor.audio.misound.bluetooth.enable=true
+
+# Dolby MediaCodecs Loading Support (Overwrites Vendor files)
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/media/media_codecs_dolby_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_dolby_audio.xml
+
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -307,6 +345,13 @@ PRODUCT_PACKAGES += \
     libavservices_minijail.vendor \
     libavservices_minijail_vendor
 
+# Media C2 Vendor
+PRODUCT_PACKAGES += \
+    libcodec2_hidl@1.0.vendor \
+    libcodec2_soft_common.vendor \
+    libstagefright_softomx.vendor
+
+# Media Configs
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2.xml \
