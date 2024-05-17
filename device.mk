@@ -116,6 +116,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES += \
     audio.bluetooth.default \
+    libbluetooth_audio_session \
     audio.primary.kona \
     audio.r_submix.default \
     audio.usbv2.default
