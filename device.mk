@@ -406,6 +406,7 @@ PRODUCT_PACKAGES += \
     FrameworkResOverlayMunch \
     NfcOverlayMunch \
     SettingsOverlayMunch \
+    SettingsProviderOverlayMunch \
     SettingsProviderOverlayMunchCN \
     SettingsProviderOverlayMunchGLOBAL \
     SettingsProviderOverlayMunchINDIA \
