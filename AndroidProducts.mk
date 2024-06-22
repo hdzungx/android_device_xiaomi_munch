@@ -5,5 +5,5 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/cherish_munch.mk
+    $(LOCAL_DIR)/blaze_munch.mk
 
