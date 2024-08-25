@@ -55,6 +55,9 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system_ext/lib/libwfdservice.so)
+            "${PATCHELF}" --replace-needed "android.media.audio.common.types-V2-cpp.so" "android.media.audio.common.types-V3-cpp.so" "${2}"
+            ;;
         vendor/etc/init/init.batterysecret.rc)
             sed -i "/seclabel u:r:batterysecret:s0/d" "${2}"
             ;;
@@ -73,6 +76,7 @@ function blob_fixup() {
         vendor/lib/libstagefright_soft_ac4dec.so | vendor/lib/libstagefright_soft_ddpdec.so | vendor/lib/libstagefrightdolby.so | vendor/lib64/libdlbdsservice.so | vendor/lib64/libstagefright_soft_ac4dec.so | vendor/lib64/libstagefright_soft_ddpdec.so | vendor/lib64/libstagefrightdolby.so)
             grep -q "libstagefright_foundation-v33.so" "${2}" || "${PATCHELF}" --replace-needed "libstagefright_foundation.so" "libstagefright_foundation-v33.so" "${2}"
             ;;
+
     esac
 }
 
