@@ -62,8 +62,8 @@ vendor/lib/rfsa/adsp/misound_res_headphone.bin
 vendor/lib/rfsa/adsp/misound_res_spk.bin
 
 # Audio
-vendor/lib/hw/audio.primary.kona.so
-vendor/lib/liba2dpoffload.so
+vendor/lib/hw/audio.primary.kona.so:vendor/lib/hw/audio.primary.munch.so
+vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_munch.so
 vendor/lib/libacdb-fts.so
 vendor/lib/libacdbloader.so
 vendor/lib/libacdbrtac.so
