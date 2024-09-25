@@ -9,16 +9,26 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Inherit from munch device
 $(call inherit-product, device/xiaomi/munch/device.mk)
 
-PRODUCT_NAME := lineage_munch
+PRODUCT_NAME := afterlife_munch
 PRODUCT_DEVICE := munch
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22021211RC
+
+# CoreGapps
+AFTERLIFE_GAPPS := true
+AFTERLIFE_CORE := true
+# Maintainer
+AFTERLIFE_MAINTAINER := HDzungx
+# FaceUnlock
+TARGET_FACE_UNLOCK_SUPPORTED := true
+# Blur 
+TARGET_SUPPORTS_BLUR := true
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
